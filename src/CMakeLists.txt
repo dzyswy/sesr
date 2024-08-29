@@ -70,6 +70,11 @@ else()
 endif()
 
 
+# rknn api
+set(RKNN_API_PATH ${CMAKE_SOURCE_DIR}/../../3rdparty/librknn_api)
+set(RKNN_RT_LIB ${RKNN_API_PATH}/aarch64/librknnrt.so)
+set(LIBS ${LIBS} ${RKNN_RT_LIB})
+include_directories(${RKNN_API_PATH}/include)
 
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/libs)
