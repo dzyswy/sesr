@@ -20,13 +20,20 @@ if __name__ == '__main__':
     result = sesr_net.forward()
 
     ress_img = cv2.dnn.imagesFromBlob(result)
-    # print('ress_img shape:', ress_img)
+    print('ress_img:', ress_img)
 
     res_img = ress_img[0]
 
     res_img = np.clip(res_img, 0, 255)
+    print('res_img', res_img)
+    print('res_img len:',len(res_img))
+    print('res_img[0] len:',len(res_img[0]))
+    print('res_img[1] len:',len(res_img[1]))
+    print('res_img[2] len:',len(res_img[2]))
 
     hr_img = np.uint8(res_img)
+
+
     cv2.imshow('hr_img', hr_img)
 
     cv2.waitKey(0)

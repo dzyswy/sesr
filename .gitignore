@@ -31,3 +31,7 @@
 *.out
 *.app
 build
+/python/sesr_collapse_m5_x4.rknn
+/python/check0_base_optimize.onnx
+/python/check2_correct_ops.onnx
+/python/check3_fuse_ops.onnx

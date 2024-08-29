@@ -53,7 +53,7 @@ message(STATUS "GLOBAL_VERSION: ${GLOBAL_VERSION}")
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(OpenCV_DIR /home/wy/src/opencv/opencv-4.6.0/out/lib/cmake/opencv4)
+#set(OpenCV_DIR /home/wy/src/opencv/opencv-4.6.0/out/lib/cmake/opencv4)
 
 
 find_package(OpenCV REQUIRED)
